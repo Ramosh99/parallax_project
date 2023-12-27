@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    text-decoration: none;
+    animation-delay: 1s;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -100px;
+}
+header nav ul a li{
+    padding: 10px 20px;
+    color: rgb(4, 31, 55);
+    border-radius: 20px;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin-left: 20px;
+}
+header nav ul a :hover,
+header nav ul a .active
+{
+    transition-duration: 0.5s;
+    background-color: rgba(69, 15, 15, 0.496);
+    color: rgb(255, 255, 255);
+}
+section{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+section img{
+    position: absolute;
+    width: 100%;
+    /* top: -100px; */
+    left: 0;
+    height: 100vh;
+    object-fit:cover;
+    height: 100vh;
+}
+#text{
+    position: relative;
+    transform: translateX(-1300px);
+    z-index: 3;
+    font-size: 240px;
+    color: aliceblue;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+#midimg{
+    z-index: 1;
+    transform: translateY(-350px);
+
+}
+#frontimg{
+    z-index: 4;
+}
+#backimg{
+    z-index: 2;
+}
+.logo
+{
+    letter-spacing: 10px;
+    font-size: 50px;
+    margin-left: 10px;
+}

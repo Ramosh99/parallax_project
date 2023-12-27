@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang='en'>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="parallaxcode.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            visit-srilanka
+        </div>
+        <nav>
+            <ul>
+                <a href=""><li class="active">home</li></a>
+                <a href=""><li>contact us</li></a>
+                <a href=""><li>our services</li></a>
+                <a href=""><li>vlogs</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="edit02.png" id="midimg" alt="">
+        <div id="text">sigiriya</div>
+        <img src="edit03.png" id="backimg" alt="">
+        <img src="edit01.png" id="frontimg" alt="">
+    </section>
+    <div class="sec" id="sec">
+        <h1>parallax scrolling effect</h1>
+        <br>
+        <p>In this example, we've defined a keyframes animation called slowdown. It starts from an initial state with a scale of 1 and ends with a final state of scale 2. You can modify the animation properties as needed to achieve the desired effect.
+
+            To slow down the animation, increase the animation-duration value. For example, setting it to 8s will make the animation take twice as long to complete as compared to setting it to 4s. Adjust the animation-timing-function property to control the easing of the animation.
+            
+            Remember to apply the animation to an HTML element by adding the animation-name property to the element's CSS. You can also adjust other animation properties like animation-iteration-count to determine how many times the animation should repeat.</p>
+            <br><br>
+            In this example, we've defined a keyframes animation called slowdown. It starts from an initial state with a scale of 1 and ends with a final state of scale 2. You can modify the animation properties as needed to achieve the desired effect.
+
+            To slow down the animation, increase the animation-duration value. For example, setting it to 8s will make the animation take twice as long to complete as compared to setting it to 4s. Adjust the animation-timing-function property to control the easing of the animation.
+            
+            Remember to apply the animation to an HTML element by adding the animation-name property to the element's CSS. You can also adjust other animation properties like animation-iteration-count to determine how many times the animation should repeat.</p>
+    
+      
+            <p>In this example, we've defined a keyframes animation called slowdown. It starts from an initial state with a scale of 1 and ends with a final state of scale 2. You can modify the animation properties as needed to achieve the desired effect.
+
+                To slow down the animation, increase the animation-duration value. For example, setting it to 8s will make the animation take twice as long to complete as compared to setting it to 4s. Adjust the animation-timing-function property to control the easing of the animation.
+                
+                Remember to apply the animation to an HTML element by adding the animation-name property to the element's CSS. You can also adjust other animation properties like animation-iteration-count to determine how many times the animation should repeat.</p>
+                <br><br>
+                In this example, we've defined a keyframes animation called slowdown. It starts from an initial state with a scale of 1 and ends with a final state of scale 2. You can modify the animation properties as needed to achieve the desired effect.
+    
+                To slow down the animation, increase the animation-duration value. For example, setting it to 8s will make the animation take twice as long to complete as compared to setting it to 4s. Adjust the animation-timing-function property to control the easing of the animation.
+                
+                Remember to apply the animation to an HTML element by adding the animation-name property to the element's CSS. You can also adjust other animation properties like animation-iteration-count to determine how many times the animation should repeat.</p>
+          </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let sky = document.getElementById('midimg');
+            let mountains_behind = document.getElementById('backimg');
+            let text = document.getElementById('text');
+            let mountains_front = document.getElementById('fontimg');
+            
+    
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+                sky.style.top = value * 1.5 + 'px';
+                mountains_behind.style.top = value * 0.6 + 'px';
+                text.style.left = value * 10 + 'px';
+                mountains_front.style.top = value * 0.6 + 'px';
+
+            });
+        });
+    </script>
+</body>
+</html>
